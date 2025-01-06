@@ -1,15 +1,11 @@
 <script>
   export default {
-    data() {
-      return {
-        name: 'Jonh Doe',
-        status: 'pending',
-        tasks: ['Task one', 'Task two', 'Task three'],
-        link: 'https://google.com',
-      };
-    },
-    methods: {
-      toggleStatus() {
+    setup() {
+      const name = 'Jonh Doe';
+      const status = 'active';
+      const tasks = ['Task One', 'Task Two', 'Task Three'];
+
+      const toggleStatus = () => {
         if(this.status === 'active') {
           this.status = 'pending';
         } else if(this.status === 'pending') {
@@ -17,8 +13,15 @@
         } else {
           this.status = 'active';
         }
+
+        return {
+          name,
+          status, 
+          tasks,
+          toggleStatus,
+        }
       }
-    }
+    },
   };
 </script>
 
@@ -39,4 +42,3 @@
 
 
 </template>
-
