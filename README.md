@@ -1,5 +1,9 @@
 # Vue.js-Crash-Course-2024
 
+## How to Run 
+Command #1 npm run dev 
+Command #2 npm run server
+
 ## Overview
 
 This repository contains the exercises completed while following the **"Vue.js Crash Course"** by [Traversy Media](https://www.youtube.com/user/TechGuyWeb). The course is a comprehensive 3-hour guide that covers the core features of Vue.js with the following outline:
